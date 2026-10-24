@@ -30,7 +30,6 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
@@ -52,3 +51,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - README.md
+  - .idea # Jekyll already excludes and files/folders that start with - or . but for some reason the site still rebuilds itself if it detects changes for this folder
