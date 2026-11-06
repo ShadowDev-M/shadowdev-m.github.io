@@ -40,6 +40,7 @@ email: "scaturchiomassimo@gmail.com"
 collections:
   projects:
     output: true
+    permalink: /projects/:path/
 
 # Setting up layout defaults (setup for posts in the future as well)
 defaults:
@@ -61,6 +62,7 @@ defaults:
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
