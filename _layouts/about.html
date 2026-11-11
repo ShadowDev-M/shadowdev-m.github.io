@@ -7,4 +7,10 @@ layout: default
 {%- include social.html show_username=true -%}
 {%- include social.html show_username=true vertical=true -%}
 
+<div class="text-center">
+    {%- assign about_page = site.pages | where: 'path', 'about.md' | first -%}
+    <a class="button button--transparent" href="{{ about_page.url | default: '/about/' | relative_url }}">View More</a>
+</div>
+
+
 {{ content }}
