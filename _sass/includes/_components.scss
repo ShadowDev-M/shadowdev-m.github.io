@@ -1,0 +1,47 @@
+﻿// For elements that will be reused multiple times (i.e the _includes)
+
+// Small helper to use in markdown to center some text {: .text-center}
+.text-center { text-align: center; }
+
+/**
+ * Socials List & Icons
+ */
+.socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text);
+
+    &:hover {
+      color: var(--text);
+      opacity: 0.65;
+      text-decoration: none;
+
+      .username { text-decoration: underline; }
+    }
+  }
+
+  &--vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+}
+
+.svg-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+

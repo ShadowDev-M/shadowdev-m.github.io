@@ -1,1 +1,10 @@
-
+<ul class="socials-list{% if include.vertical %} socials-list--vertical{% endif %}">
+    {%- for s in site.data.socials -%}
+    <li>
+        <a href="{{ s.url }}" aria-label="{{ s.label }}"{% if s.id == 'email' %} class="u-email"{% endif %}>
+            <svg class="svg-icon" aria-hidden="true"><use href="{{ '/assets/img/favicons/social-icons.svg#' | append: s.id | relative_url }}"></use></svg>
+            {%- if include.show_username -%}<span class="username">{{ s.username | escape }}</span>{%- endif -%}
+        </a>
+    </li>
+    {%- endfor -%}
+</ul>
