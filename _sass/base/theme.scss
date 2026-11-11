@@ -1,0 +1,20 @@
+﻿@mixin light-theme {
+  color-scheme: light;
+  --text: #111;
+  --bg: #fdfdfd;
+  --surface: #f3f4f6;
+  --border: #eeeeee;
+  --muted: #6b7280;
+  --strong: #424242;
+  --link: #2a7ae2;
+  --button: #161b22;
+  --button-text: #ffffff;
+}
+
+@mixin dark-theme {
+  color-scheme: dark;
+
+}
+
+:root { @include light-theme; }
+

@@ -4,13 +4,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
 
-  {% capture favicon_path %}{{ '/assets/img/favicons/logo' | relative_url}}{% endcapture %}
+  {%- assign favicon_path = '/assets/img/favicons/logo' | relative_url -%}
   <link rel="icon" type="image/png" sizes="16x16" href="{{ favicon_path }}/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_path }}/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path }}/apple-touch-icon.png">
   <link rel="shortcut icon" href="{{ favicon_path }}/favicon.ico">
   <link rel="manifest" href="{{ favicon_path }}/site.webmanifest">
 
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   {%- feed_meta -%}
 </head>
