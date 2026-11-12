@@ -1,9 +1,9 @@
-﻿# Data file for socials
+# Data file for socials
 
 - id: github
   label: GitHub
   username: ShadowDev-M
-  url: https://github.com/ShadowDev-M/
+  url: https://github.com/ShadowDev-M
 
 - id: linkedin
   label: LinkedIn
@@ -13,7 +13,7 @@
 - id: itchio
   label: itch.io
   username: shadowdev-games
-  url: https://shadowdev-games.itch.io/
+  url: https://shadowdev-games.itch.io
 
 #- id: youtube
 #  label: YouTube

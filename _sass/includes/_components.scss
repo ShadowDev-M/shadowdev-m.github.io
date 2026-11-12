@@ -1,0 +1,75 @@
+// For elements that will be reused multiple times (i.e the _includes)
+
+// Small helper to use in markdown to center some text {: .text-center}
+.text-center { text-align: center; }
+
+/**
+ * Socials List & Icons
+ */
+.socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text);
+
+    &:hover {
+      color: var(--text);
+      opacity: $hover-opacity;
+      text-decoration: none;
+
+      .username { text-decoration: underline; }
+    }
+  }
+
+  &--vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+}
+
+.svg-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+/**
+ * Buttons
+ */
+.button {
+  display: inline-block;
+  padding: 0.55rem 1.25rem;
+  font-weight: $base-font-weight * 1.5;
+  color: var(--surface);
+  background: var(--button);
+  border: 2px solid var(--button);
+  //border-radius: 4px;
+
+  &:hover {
+    color: var(--hover);
+    opacity: $hover-opacity;
+    text-decoration: none;
+  }
+
+  &--transparent {
+    color: var(--button);
+    background: transparent;
+
+    &:hover {
+      color: var(--button);
+      background: var(--surface);
+      opacity: 1;
+    }
+  }
+}

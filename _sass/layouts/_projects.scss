@@ -1,0 +1,47 @@
+/**
+ * Projects Page
+ */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: $spacing-unit;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-entry {
+  margin: 0;
+
+  a {
+    display: block;
+    color: inherit;
+
+    &:hover {
+      //color: var(--hover);
+      opacity: $hover-opacity;
+      text-decoration: none;
+    }
+
+    &:hover .project-entry__title { text-decoration: underline; }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  &__title {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: $base-font-weight * 1.5;
+  }
+
+  &__summary {
+    display: block;
+    font-size: $small-font-size;
+    color: var(--muted);
+  }
+}

@@ -1,10 +1,8 @@
 ---
-layout: about
+layout: page
 title: About
 permalink: /about/
 ---
-
-{%- include social.html show_username=true -%}
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
@@ -18,3 +16,13 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+
+{% include social.html %}
+{% include social.html vertical = true %}
+{% include social.html show_username=true %}
+{% include social.html show_username=true vertical=true %}
+
+<div class="text-center">
+  {%- assign about_page = site.pages | where: 'path', 'about.md' | first -%}
+  <a class="button button--transparent" href="{{ about_page.url | default: '/about/' | relative_url }}">View More</a>
+</div>
