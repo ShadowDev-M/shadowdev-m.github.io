@@ -103,12 +103,9 @@
   flex: 1;
 }
 
-.page-header {
-  margin-bottom: $spacing-unit;
-}
-
 .page-title {
   @include relative-font-size(2);
+  margin-bottom: $spacing-unit;
 }
 
 .prose {
@@ -166,3 +163,7 @@
     border-radius: 50%;
   }
 }
+
+/**
+ * Project
+ */
