@@ -8,8 +8,6 @@ logo: /assets/img/favicons/logo/logo.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://shadowdev-m.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-# TODO: Socials Rework with a data yaml file
-
 # Collections
 collections:
   projects:

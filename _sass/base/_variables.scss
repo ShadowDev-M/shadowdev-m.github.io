@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 // Define defaults for each variable.
 
@@ -9,6 +9,8 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
+
+$hover-opacity: 0.70;
 
 // Width of the content area
 $content-width:    1000px;

@@ -1,9 +1,23 @@
-﻿---
+---
 layout: default
 ---
 
 <div class="projects">
 
   <h1 class="page-title">{{ page.title | escape }}</h1>
+
+  {%- assign sorted_projects = site.projects | sort: "order", "last" -%}
+  <ul class="project-grid">
+    {%- for project in sorted_projects -%}
+    {%- assign thumbnail = project.thumbnail | default: '/assets/img/projects/ProjectPlaceholder.png' -%}
+    <li class="project-entry">
+      <a href="{{ project.url | relative_url }}">
+        <img src="{{ thumbnail | relative_url }}" alt="Project Thumbnail">
+        <span class="project-entry__title">{{ project.title | escape }}</span>
+        {%- if project.summary -%}<span class="project-entry__summary">{{ project.summary | escape }}</span>{%- endif -%}
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
 
 </div>
