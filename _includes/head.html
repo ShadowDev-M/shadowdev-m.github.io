@@ -12,5 +12,9 @@
   <link rel="manifest" href="{{ favicon_path }}/site.webmanifest">
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {%- if page.layout == 'project' -%}
+  <link rel="stylesheet" href="{{ '/assets/vendor/photoswipe/photoswipe.css' | relative_url }}">
+  {%- endif -%}
+
   {%- feed_meta -%}
 </head>

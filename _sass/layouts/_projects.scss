@@ -3,7 +3,7 @@
  */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: $spacing-unit;
   list-style: none;
   margin: 0;
@@ -29,7 +29,7 @@
   img {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
   }
 
@@ -42,6 +42,6 @@
   &__summary {
     display: block;
     font-size: $small-font-size;
-    color: var(--muted);
+    color: var(--text);
   }
 }

@@ -2,6 +2,7 @@
 layout: project
 title: "Project 1"
 summary: "Test Project."
-order: 1
+thumbnail: /assets/img/projects/gear-grafter/Cover.png
+order: 5
 ---
 

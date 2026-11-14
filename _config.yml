@@ -53,3 +53,4 @@ exclude:
   - vendor/
   - README.md
   - .idea # Jekyll already excludes and files/folders that start with - or . but for some reason the site still rebuilds itself if it detects changes for this folder
+  - assets/vendor/VERSIONS.md

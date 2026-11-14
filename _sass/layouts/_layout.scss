@@ -21,7 +21,7 @@
   letter-spacing: -1px;
 
   &,
-  &:visited { color: var(--strong); }
+  &:visited { color: var(--text); }
 }
 
 .site-header__actions {
@@ -103,9 +103,12 @@
   flex: 1;
 }
 
+.page-header {
+  margin-bottom: $spacing-unit;
+}
+
 .page-title {
   @include relative-font-size(2);
-  margin-bottom: $spacing-unit;
 }
 
 .prose {
@@ -152,7 +155,7 @@
   }
 
   p {
-    color: var(--muted);
+    color: var(--text);
   }
 
   &__logo {

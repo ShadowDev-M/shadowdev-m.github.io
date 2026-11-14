@@ -4,7 +4,9 @@ layout: default
 
 <div class="projects">
 
-  <h1 class="page-title">{{ page.title | escape }}</h1>
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </header>
 
   {%- assign sorted_projects = site.projects | sort: "order", "last" -%}
   <ul class="project-grid">
