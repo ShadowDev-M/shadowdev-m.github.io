@@ -1,3 +1,7 @@
 {%- if page.layout == 'project' -%}
 <script type="module" src="{{ '/assets/js/lightbox.js' | relative_url }}"></script>
 {%- endif -%}
+
+{%- if page.layout == 'home' or page.layout == 'project' -%}
+<script type="module" src="{{ '/assets/js/carousel.js' | relative_url }}"></script>
+{%- endif -%}
