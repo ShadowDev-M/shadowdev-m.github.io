@@ -4,17 +4,15 @@ layout: default
 
 <div class="home">
 
-<section class="hero">
-  {%- if site.logo -%}
-  <img class="hero__logo" src="{{ site.logo | relative_url }}" alt="MS">
-  {%- endif -%}
-  <h1>{{ site.title | escape }}</h1>
-  <p>{{ site.description | escape }}</p>
-  {%- assign about_page = site.pages | where: 'path', 'about.md' | first -%}
-  <a class="button" href="{{ about_page.url | default: '/about/' | relative_url }}">View More</a>
-</section>
-
-  <!-- TODO: Project carousel -->
+  <section class="hero">
+    {%- if site.logo -%}
+    <img class="hero__logo" src="{{ site.logo | relative_url }}" alt="MS">
+    {%- endif -%}
+    <h1>{{ site.title | escape }}</h1>
+    <p>{{ site.description | escape }}</p>
+    {%- assign about_page = site.pages | where: 'path', 'about.md' | first -%}
+    <a class="button" href="{{ about_page.url | default: '/about/' | relative_url }}">View More</a>
+  </section>
 
   {% include carousel.html %}
 

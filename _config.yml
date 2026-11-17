@@ -29,7 +29,6 @@ defaults:
 
 # Build Settings
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
