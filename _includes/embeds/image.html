@@ -1,7 +1,7 @@
 {%- assign src = include.src | relative_url -%}
 <figure class="pswp-gallery">
-    <a class="pswp-link" href="{{ src }}" data-pswp-width="{{ include.w }}" data-pswp-height="{{ include.h }}">
-        <img src="{{ src }}" width="{{ include.w }}" height="{{ include.h }}" alt="{{ include.alt | escape }}" loading="lazy">
-    </a>
-    {%- if include.caption -%} <figcaption> {{ include.alt }} </figcaption> {%- endif -%}
+  <a class="pswp-link" href="{{ src }}" data-pswp-width="{{ include.w }}" data-pswp-height="{{ include.h }}">
+    <img src="{{ src }}" width="{{ include.w }}" height="{{ include.h }}" alt="{{ include.alt | escape }}" loading="lazy">
+  </a>
+  {%- if include.caption -%} <figcaption> {{ include.alt }} </figcaption> {%- endif -%}
 </figure>
